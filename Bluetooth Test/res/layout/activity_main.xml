@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="4.2">
+
+            <!--<Button-->
+                <!--android:id="@+id/btn2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:text="Search" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1.2"-->
+                <!--android:text="Discoverable" />-->
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.3"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/tvMe"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#4A25E4"
+                android:paddingLeft="10dp"
+                android:text="Me"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvDevice"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="#4A25E4"
+                android:fitsSystemWindows="true"
+                android:paddingLeft="10dp"
+                android:text="Participant"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#000000" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#000000" >
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.95" >
+
+            <EditText
+                android:id="@+id/editTextOut"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:text="Send"
+                android:textSize="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

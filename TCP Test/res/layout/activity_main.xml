@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.05"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:text="  MyIP:" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="None" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.05"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:text="  MyPort:" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="None" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.05"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:text="  Status:" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="None" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.75"
+                android:weightSum="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="0.05"
+                    android:background="#CAFF70"
+                    android:gravity="center"
+                    android:text="Rx / Tx" />
+
+                <ListView
+                    android:id="@+id/listView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="0.95"
+                    android:background="#AAAAAA"
+                    android:cacheColorHint="#00000000" >
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.1"
+                android:weightSum="1"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:lines="1"
+                    android:ems="10" >
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="Send" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

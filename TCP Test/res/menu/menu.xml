@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_Wifi"
+        android:title="Wifi" >
+        <menu>
+            <item
+                android:id="@+id/menu_addr"
+                android:title="Get IP" />
+            <item
+                android:id="@+id/menu_port"
+                android:title="Set Port" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_TCP"
+        android:title="TCP Menu" >
+        <menu>
+            <item
+                android:id="@+id/menu_server"
+                android:title="Server Open" />
+            <item
+                android:id="@+id/menu_client"
+                android:title="Connect" />
+            <item
+                android:id="@+id/menu_disconnect"
+                android:title="All Stop" />
+        </menu>
+    </item>
+
+</menu>
