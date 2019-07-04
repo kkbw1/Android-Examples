@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_myIP"
+        android:title="My IP" />
+
+    <item
+        android:id="@+id/menu_viewIP"
+        android:title="View IP" />
+
+    <item
+        android:id="@+id/menu_setIP"
+        android:title="Set IP" />
+
+</menu>

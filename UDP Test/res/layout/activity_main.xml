@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:background="#000000">
+
+            <ListView
+                android:id="@+id/list_chat"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="8"
+                android:background="#FFFFFF">
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="2"
+                android:weightSum="10"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/et_message"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="top">
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Send" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
